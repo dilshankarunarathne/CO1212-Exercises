@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e29f67c-29cc-415f-b658-b381b80c6e77" name="Changes" comment="Merge branch 'main' of https://github.com/dilshankarunarathne/CO1212-Exercises">
       <change afterPath="$PROJECT_DIR$/me/karunarathne/CO1212/E7/E7Q1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/karunarathne/CO1212/E7/E7Q2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -46,7 +45,7 @@
     <property name="jdk.selected.JAVA_MODULE" value="1.6" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Exercise 1/E1.png" />
   </component>
-  <component name="RunManager" selected="Application.E7Q2">
+  <component name="RunManager">
     <configuration name="E7Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.karunarathne.CO1212.E7.E7Q1" />
       <module name="CO1212-Exerices" />
@@ -54,16 +53,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="E7Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.karunarathne.CO1212.E7.E7Q2" />
-      <module name="CO1212-Exerices" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.E7Q2" />
         <item itemvalue="Application.E7Q1" />
       </list>
     </recent_temporary>
@@ -78,7 +69,7 @@
       <updated>1648274050572</updated>
       <workItem from="1648274050588" duration="1755000" />
       <workItem from="1648282336188" duration="594000" />
-      <workItem from="1648298114211" duration="3391000" />
+      <workItem from="1648298114211" duration="1671000" />
     </task>
     <servers />
   </component>
