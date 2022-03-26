@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e29f67c-29cc-415f-b658-b381b80c6e77" name="Changes" comment="Merge branch 'main' of https://github.com/dilshankarunarathne/CO1212-Exercises">
-      <change afterPath="$PROJECT_DIR$/Exercise 7 - Assignment 5/E7Q1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise 7 - Assignment 5/E7Q2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,7 @@
       <updated>1648274050572</updated>
       <workItem from="1648274050588" duration="1755000" />
       <workItem from="1648282336188" duration="594000" />
-      <workItem from="1648298114211" duration="4220000" />
+      <workItem from="1648298114211" duration="4817000" />
     </task>
     <servers />
   </component>
