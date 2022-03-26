@@ -13,14 +13,19 @@ public class E7Q1 {
     }
 
     private static void println(double min) {
-        System.out.println (min) ;
+        System.out.println (format (min)) ;
     }
 
     private static double findMin(double num1, double num2, double num3) {
-        return Math.min(Math.max(num1, num2), num3);
+        return Math.min(Math.min(num1, num2), num3);
     }
 
     private static double inputNumber() {
         return scanner.nextDouble() ;
+    }
+
+    private static String format (double number) {
+        if (Math.round(number) == number) return String.valueOf(Math.round(number)) ;
+        return String.valueOf(number) ;
     }
 }
