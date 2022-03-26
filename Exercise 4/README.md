@@ -1,1 +1,1 @@
-![](E:\Assignments\CO1212 Codes\CO1212-Exerices\Exercise 1\E4.png)
+![](E4.png)
