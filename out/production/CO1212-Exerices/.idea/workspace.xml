@@ -86,7 +86,7 @@
       <workItem from="1648282336188" duration="594000" />
       <workItem from="1648298114211" duration="4817000" />
       <workItem from="1649394762609" duration="1052000" />
-      <workItem from="1649408067785" duration="380000" />
+      <workItem from="1649408067785" duration="1478000" />
     </task>
     <task id="LOCAL-00001" summary="Created Converter.java">
       <created>1649394981980</created>
@@ -95,7 +95,28 @@
       <option name="project" value="LOCAL" />
       <updated>1649394981980</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working on Assignment 8">
+      <created>1649408512594</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649408512594</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixes">
+      <created>1649408964129</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649408964129</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Works for all integers">
+      <created>1649409250235</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649409250235</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +127,9 @@
     <MESSAGE value="Merge branch 'main' of https://github.com/dilshankarunarathne/CO1212-Exercises&#10;&#10;# Conflicts:&#10;#&#9;Exercise 7 - Assignment 5/README.md" />
     <MESSAGE value="Merge branch 'main' of https://github.com/dilshankarunarathne/CO1212-Exercises" />
     <MESSAGE value="Created Converter.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Converter.java" />
+    <MESSAGE value="Working on Assignment 8" />
+    <MESSAGE value="Fixes" />
+    <MESSAGE value="Works for all integers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Works for all integers" />
   </component>
 </project>
