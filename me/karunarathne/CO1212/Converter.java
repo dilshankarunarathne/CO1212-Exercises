@@ -13,18 +13,17 @@ public class Converter {
     }
 
     private static boolean mainLoop() {
-        print ("Enter a decimal number > ") ;
         double input = readInput () ;
-        print (input + " in binary is : " + toBinary (input)) ;
+        print (input + " in binary is : " + toBinary(input) ) ;
         return askAgain () ;
     }
 
     private static boolean askAgain() {
-        print ("Would you like to convert another (Y/N) > ") ;
+        print ("\nWould you like to convert another (Y/N) > ") ;
         return scanner.nextLine().equalsIgnoreCase("Y") ;
     }
 
-    private static double toBinary(double input) {
+    private static String toBinary(double input) {
         String binaryString = "" ;
         double x = input ;
         while (true) {
@@ -37,11 +36,12 @@ public class Converter {
             x /= 2 ;
         }
 
-        return Double.parseDouble(binaryString) ;
+        return binaryString ;
     }
 
     private static double readInput() {
-        return scanner.nextDouble() ;
+        print ("Enter a decimal number > ") ;
+        return Double.parseDouble(scanner.nextLine()) ;
     }
 
     private static void print(String s) {
