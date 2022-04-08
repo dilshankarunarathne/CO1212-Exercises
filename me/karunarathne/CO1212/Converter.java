@@ -23,10 +23,6 @@ public class Converter {
         return scanner.nextLine().equalsIgnoreCase("Y") ;
     }
 
-    private static boolean hasDecimal (String input) {
-        return input.contains(".") ;
-    }
-
     private static String pickApartDecimal (String input) {
         return input.split("\\.") [1] ;
     }
@@ -34,14 +30,13 @@ public class Converter {
     private static String toBinary(double input) {
         String binaryString = "" ;
         double x = input ;
-        while (true) {
-            if (x<1) break ;
-            int rem = (int) (x%2);
-            binaryString = rem + binaryString ;
-            if (rem==1) {
-                x -- ;
+        while (!(x < 1)) {
+            int rem = (int) (x % 2);
+            binaryString = rem + binaryString;
+            if (rem == 1) {
+                x--;
             }
-            x /= 2 ;
+            x /= 2;
         }
         if (x==0) return binaryString ;
 
@@ -51,19 +46,18 @@ public class Converter {
 
     private static String decimalPartToBinary (String input) {
         input = "0." + input ;
-        Double x = Double.parseDouble(input) ;
+        double x = Double.parseDouble(input) ;
         String binaryString = "." ;
         int count = 0 ;
-        while (true) {
-            if (x==0 || count>5) break ;
-            x *= 2 ;
+        while (x != 0 && count <= 5) {
+            x *= 2;
             if (x >= 1) {
-                binaryString += "1" ;
-                x -- ;
+                binaryString += "1";
+                x--;
             } else {
-                binaryString += "0" ;
+                binaryString += "0";
             }
-            count ++ ;
+            count++;
         }
         return binaryString ;
     }
