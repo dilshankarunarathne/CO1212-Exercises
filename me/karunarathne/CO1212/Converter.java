@@ -14,7 +14,7 @@ public class Converter {
 
     private static boolean mainLoop() {
         double input = readInput () ;
-        print (input + " in binary is : " + toBinary(input) ) ;
+        print (input + " in binary is : " + toBinary(input, 6) ) ;
         return askAgain () ;
     }
 
@@ -27,39 +27,40 @@ public class Converter {
         return input.split("\\.") [1] ;
     }
 
-    private static String toBinary(double input) {
-        String binaryString = "" ;
+    private static String toBinary(double input, int toDecimalPlaces) {
+        StringBuilder binaryString = new StringBuilder();
         double x = input ;
         while (!(x < 1)) {
             int rem = (int) (x % 2);
-            binaryString = rem + binaryString;
+            binaryString.insert(0, rem);
             if (rem == 1) {
                 x--;
             }
             x /= 2;
         }
-        if (x==0) return binaryString ;
+        if (x==0) return binaryString.toString();
 
-        binaryString += decimalPartToBinary(pickApartDecimal(String.valueOf(input))) ;
-        return binaryString ;
+        binaryString.append(decimalPartToBinary(
+                pickApartDecimal(String.valueOf(input)), toDecimalPlaces
+        ));
+        return binaryString.toString();
     }
 
-    private static String decimalPartToBinary (String input) {
-        input = "0." + input ;
-        double x = Double.parseDouble(input) ;
-        String binaryString = "." ;
+    private static String decimalPartToBinary (String input, int toDecimalPlaces) {
+        double x = Double.parseDouble("0." + input) ;
+        StringBuilder binaryString = new StringBuilder(".");
         int count = 0 ;
-        while (x != 0 && count <= 5) {
+        while (x != 0 && count <= toDecimalPlaces) {
             x *= 2;
             if (x >= 1) {
-                binaryString += "1";
+                binaryString.append("1");
                 x--;
             } else {
-                binaryString += "0";
+                binaryString.append("0");
             }
             count++;
         }
-        return binaryString ;
+        return binaryString.toString();
     }
 
     private static double readInput() {
