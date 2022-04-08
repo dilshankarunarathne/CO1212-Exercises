@@ -8,11 +8,11 @@ public class Converter {
     public static void main(String[] args) {
         scanner = new Scanner(System.in) ;
         while (true) {
-            if (! mainloop()) break ;
+            if (! mainLoop()) break ;
         }
     }
 
-    private static boolean mainloop() {
+    private static boolean mainLoop() {
         print ("Enter a decimal number > ") ;
         double input = readInput () ;
         print (input + " in binary is : " + toBinary (input)) ;
@@ -29,7 +29,11 @@ public class Converter {
         double x = input ;
         while (true) {
             if (x==0) break ;
-            binaryString = x%2 + binaryString ;
+            int rem = (int) (x%2);
+            binaryString = rem + binaryString ;
+            if (rem==1) {
+                x -- ;
+            }
             x /= 2 ;
         }
 
