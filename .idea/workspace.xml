@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e29f67c-29cc-415f-b658-b381b80c6e77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Exercise 8 - Assignment 6/Converter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +86,8 @@
       <workItem from="1648298114211" duration="4817000" />
       <workItem from="1649394762609" duration="1052000" />
       <workItem from="1649408067785" duration="5176000" />
+      <workItem from="1649431513577" duration="591000" />
+      <workItem from="1649433611749" duration="490000" />
     </task>
     <task id="LOCAL-00001" summary="Created Converter.java">
       <created>1649394981980</created>
