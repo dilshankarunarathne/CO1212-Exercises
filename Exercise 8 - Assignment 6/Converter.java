@@ -1,5 +1,4 @@
-package me.karunarathne.CO1212.A6;
-
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Converter {
@@ -33,23 +32,40 @@ public class Converter {
     }
 
     private static String toBinary(double input, int toDecimalPlaces) {
+        char type = '0' ;
+        String dec = String.valueOf(input) ;
+
+        if (dec.matches("^0+\\.\\d+$")) type = '1' ; // 0.56
+        else if (dec.matches("^\\d+$")) type = '2' ; // 48
+        else if (dec.matches("^[123456789]+\\d*\\.*0*$")) type = '2' ; // 48.0
+        else if (dec.matches("^[123456789]+\\.\\d*[123456789]\\d*$")) type = '3' ; // 75.68
+        else throw new InputMismatchException("unidentified input") ;
+
+        return switch (type) {
+            case '1' ->     // 0.88
+                    "0" + decimalPartToBinary(
+                            pickApartDecimal(String.valueOf(input)), toDecimalPlaces
+                    );
+            case '2' ->     // 56
+                    wholePartToBinary(input);
+            case '3' ->     // 63.78
+                    wholePartToBinary(input) + decimalPartToBinary(
+                            pickApartDecimal(String.valueOf(input)), toDecimalPlaces
+                    );
+            default -> throw new IllegalStateException("Unexpected value ");
+        };
+    }
+
+    private static String wholePartToBinary (double input) {
         StringBuilder binaryString = new StringBuilder();
-        double x = input ;
-        while (!(x < 1)) {
-            int rem = (int) (x % 2);
+        while (!(input < 1)) {
+            int rem = (int) (input % 2);
             binaryString.insert(0, rem);
             if (rem == 1) {
-                x--;
+                input--;
             }
-            x /= 2;
+            input /= 2;
         }
-        if (x==0) return binaryString.toString();
-
-        binaryString.append(
-                decimalPartToBinary (
-                    pickApartDecimal( String.valueOf(input)), toDecimalPlaces
-                )
-        );
         return binaryString.toString();
     }
 
