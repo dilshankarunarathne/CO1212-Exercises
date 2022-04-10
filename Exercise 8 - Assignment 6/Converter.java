@@ -13,8 +13,13 @@ public class Converter {
     }
 
     private static boolean mainLoop() {
-        double input = readInput () ;
-        print (input + " in binary is : " + toBinary(input, 6) ) ;
+        String input = readInput () ;
+        print (
+                input + " in binary is : " +
+                toBinary(
+                        Double.parseDouble(input), 6
+                )
+        ) ;
         return askAgain () ;
     }
 
@@ -40,9 +45,11 @@ public class Converter {
         }
         if (x==0) return binaryString.toString();
 
-        binaryString.append(decimalPartToBinary(
-                pickApartDecimal(String.valueOf(input)), toDecimalPlaces
-        ));
+        binaryString.append(
+                decimalPartToBinary (
+                    pickApartDecimal( String.valueOf(input)), toDecimalPlaces
+                )
+        );
         return binaryString.toString();
     }
 
@@ -63,9 +70,9 @@ public class Converter {
         return binaryString.toString();
     }
 
-    private static double readInput() {
+    private static String readInput() {
         print ("Enter a decimal number > ") ;
-        return Double.parseDouble(scanner.nextLine()) ;
+        return scanner.nextLine() ;
     }
 
     private static void print(String s) {
